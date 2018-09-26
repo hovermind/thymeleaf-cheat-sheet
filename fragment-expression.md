@@ -1,13 +1,31 @@
-## Condition in Fragment Expression
+## Syntax
+Fragment Expression:
 ```
-<div th:insert="${ #authorization.expression( 'hasAuthority('''A''')' ) } ? ~{ fragments :: A } : ~{ fragments :: B }" >
+~{ }
+~{ templates/fragments/foo_fragments :: bar_section }
+~{ this :: title }
+```
+
+**Using fragment in view**
+```
+<div th:insert="~{ }" >
 
 </div>
 
+<div th:replace="~{ }" >
+
+</div>
 ```
-For empty => `~{ }`
+
+## Condition in Fragment Expression
 ```
-<div th:insert="${ #authorization.expression( 'hasAuthority('''A''')' ) } ? ~{ fragments :: A } : ~{ }" >
+<div th:insert="${ #authorization.expression('hasAuthority('''A''')') } ? ~{ fragments :: A } : ~{ fragments :: B }" >
+
+</div>
+```
+**For empty fragment** => `~{ }`
+```
+<div th:insert="${ #authorization.expression('hasAuthority('''A''')') } ? ~{ fragments :: A } : ~{ }" >
 
 </div>
 ```
