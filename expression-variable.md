@@ -33,14 +33,7 @@ Using property of bar object
 <p th:text="${bar.id}"></p>
 ```
 
-## Using Property of Exposed Object
-```
-<div th:object="${foo}">
-  <p th:text="${id}"></p>
-</div>
-```
-
-## Getting Thymeleaf Variable
+## Using Thymeleaf Variable
 ```
 <div th:with="id=${foo.id}">
   <p th:text="${id}"></p>
