@@ -11,7 +11,7 @@
 
 ## Literal Substitions `| |` (Interpolation)
 ```
-<p th:text="|${foo} ${bar}|"></p>
+<p th:text="|The name is ${name}|"></p>
 
 <div th:with="foo=${ ... }">
 
@@ -20,5 +20,5 @@
 </div>
 ```
 
-**Note:** `th:text="${foo} ${bar}"` would not work, you have to use `| |` to get space in between (or use `th:text="${foo + ' ' + bar}"`)
+**Note:** `th:text="The name is ${name}"` would not work, you have to use `| |` to get space in between (or use `th:text="${'The name is ' + name }"`)
 
