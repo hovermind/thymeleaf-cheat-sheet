@@ -5,4 +5,4 @@
 * [`@{...}` Link (URL) Expressions](#)
 * [`~{...}` Fragment Expressions](#)
 * [`|...|` Substitution Expressions](#)
-* [`__${...}__` Preprocessor](#)
+* [`__${expression}__)` Preprocessor](#)
