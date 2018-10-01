@@ -1,4 +1,6 @@
-## Page Based Roles
+## See: [Role Per Page by Configuration Property](https://github.com/hovermind/springboot-webmvc/blob/master/role-per-page-by-config-property.md)
+
+## Role Per Page by Enum
 #### Enum that Represents both Roles and Page Names
 `PageRoleEnum.java`
 ```
