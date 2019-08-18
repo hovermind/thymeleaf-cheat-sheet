@@ -1,6 +1,6 @@
 Thymeleaf cheat sheet
 ==================
-This is a cheat sheet to summarize all the main Thymeleaf features and how to use them to kickstart you with Thymeleaf.
+This is a cheat sheet to summarize all the main Thymeleaf features and how to use them.
 
 -----------
 
